@@ -1,0 +1,221 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width: 1580px)
+  .delivery-maps
+    padding: 0 0 0 334px
+    h3
+      font-size: 30px
+      max-width: 205px
+    &:before
+      width: 750px
+      height: 600px
+      bottom: -20px
+      background-position: left center
+
+  .footer-box__body
+    margin: 50px 0 0
+
+  footer
+    padding: 40px 40px 20px
+
+@media only screen and (max-width: 1200px)
+  .menu li
+    margin: 0 20px 0 0
+
+  .phone
+    font-size: 18px
+
+  .btn-call
+    margin: 0 20px
+
+  .slick-prev
+    left: 10px
+
+  .slick-next
+    right: 10px
+
+  .slick-arrow
+    background: $accent
+    fill: #fff
+    padding: 5px
+    top: 50%
+
+  .footer-box
+    max-width: 390px
+
+  footer .logo
+    max-width: 120px
+    margin: 0 20px 0 0
+
+  footer .phone
+    font-size: 20px
+
+  .footer-box__footer
+    font-size: 14px
+
+  .delivery-maps
+    padding: 0 0 0 270px
+    &:before
+      width: 610px
+      height: 530px
+      background-position: left bottom
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width: 992px)
+  .home
+    min-height: auto
+    padding: 150px 0 250px
+
+  .orders-wrapper
+    padding: 50px 40px
+    h2
+      margin: 0 0 30px
+    .box-text
+      margin: 0 0 20px
+
+  .orders
+    padding: 80px 0
+
+  .delivery-maps
+    display: none
+
+  .footer-box
+    margin: 0 auto
+    max-width: none
+
+  footer
+    padding: 30px 20px
+
+@media only screen and (max-width: 940px)
+  header
+    padding: 15px 0
+
+    .menu
+      display: none
+
+  .btn-call
+    margin: 0 auto
+
+  .productions
+    margin: -110px 0 60px
+
+  .products-item
+    height: 280px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px)
+  h2
+    font-size: 30px
+
+  .ml-pc-auto
+    margin: 0
+
+  .news
+    margin: 30px 0 40px
+    padding: 150px 0 0
+    &:before
+      height: 500px
+    h3
+      font-size: 30px
+
+  .news-box
+    padding: 20px 35px
+    &__img
+      height: 200px
+
+  .date-news
+    margin: 0 0 15px
+    font-size: 16px
+
+  .checkbox
+    margin: 20px 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width: 576px)
+  .btn
+    padding: 0 20px
+
+  .home .logo
+    max-width: 250px
+
+  h2
+    font-size: 24px
+
+
+  .mb-40
+    margin-bottom: 25px
+
+  .news
+    h2
+      font-size: 24px
+
+  .company-numbers
+    padding: 0 0 40px
+    h2
+      margin: 0 0 30px
+
+  .orders-wrapper
+    padding: 30px 25px
+    h2
+      font-size: 22px
+
+@media only screen and (max-width: 480px)
+  .btn-call
+    display: none
+
+  header
+    .phone
+      margin: 0 auto 0 0
+
+  .productions-box
+    height: 280px
+
+  .productions
+    margin: -100px 0 40px
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 420px)
+  .footer-box__head
+    flex-direction: column
+    align-items: flex-start
+
+  footer
+    position: relative
+    z-index: 1
+    &:before
+      content: ''
+      position: absolute
+      width: 100%
+      height: 100%
+      background: #fff
+      opacity: .3
+      left: 0
+      top: 0
+      z-index: -1
+    .logo
+      margin: 0 auto 20px
+
+
+  .footer-box__body
+    margin: 20px 0 0
+
+  .footer-box__col h3
+    margin: 0 0 10px
+
+  .footer-box__footer
+    flex-direction: column-reverse
+
+  .list-social
+    margin: 0 0 10px
+
+  .footer-box__col
+    margin: 0
+
+  .footer-box__body
+    justify-content: space-between
+
+  .modal-title
+    font-size: 20px
