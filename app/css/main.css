@@ -424,7 +424,6 @@ header {
     background: url("../img/bg1.jpg") no-repeat center;
       background-size: cover; }
   .news h2 {
-    text-shadow: 2px 2px 0px #FFFFFF;
     font-size: 40px; }
 
 .slick-arrow {
@@ -616,7 +615,8 @@ footer {
   max-width: 568px;
   width: 100%;
   color: #000;
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  margin: 0 0 0 auto; }
 
 .footer-box__head {
   display: -webkit-box;
@@ -682,7 +682,10 @@ footer {
       -ms-flex-align: start;
           align-items: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end; }
 
 .footer-box__col {
   margin: 0 50px 0 0; }
@@ -743,12 +746,12 @@ footer {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
   .list-social li {
-    margin: 0 23px 0 0; }
+    margin: 0 15px 0 0; }
     .list-social li:last-child {
       margin: 0; }
     .list-social li a {
-      width: 20px;
-      height: 20px;
+      width: 24px;
+      height: 24px;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -936,7 +939,11 @@ footer {
     margin: 0 auto;
     max-width: none; }
   footer {
-    padding: 30px 20px; } }
+    padding: 30px 20px; }
+  .footer-box__body {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; } }
 
 @media only screen and (max-width: 940px) {
   header {
