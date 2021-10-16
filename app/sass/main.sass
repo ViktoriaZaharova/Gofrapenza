@@ -146,6 +146,7 @@ button, .btn
 
   &:hover, &:focus
     outline: none
+    box-shadow: none
 
 .btn
   display: flex
@@ -158,10 +159,17 @@ button, .btn
 .btn-border-white
   border: 1px solid #fff
   color: #fff
-
+  font-size: 16px
   &:hover
     color: $accent
     background: #ffff
+    
+.btn-border-black
+  border: 1px solid #000
+  color: #000
+  &:hover
+    color: #fff
+    background: #000
 
 .btn-border
   font-size: 14px
@@ -201,6 +209,23 @@ button, .btn
     background: $accent
     color: #fff
 
+h1
+  text-transform: uppercase
+  font-size: 48px
+  font-weight: bold
+  font-family: $default-font
+  line-height: 54px
+  color: #000
+  width: 100%
+
+.subtitle
+  text-transform: uppercase
+  width: 100%
+  font-size: 30px
+  font-weight: bold
+  line-height: 34px
+  font-family: $default-font
+
 h2
   text-transform: uppercase
   font-size: 36px
@@ -232,6 +257,9 @@ h2
   align-items: center
   justify-content: center
   width: 100%
+  max-width: 249px
+  img
+    width: 100%
 
 .btn-burger
   display: flex
@@ -240,7 +268,7 @@ h2
   width: 18px
   min-width: 18px
   height: 15px
-  fill: #fff
+  fill: #000
 
   &:hover
     fill: $accent
@@ -262,12 +290,11 @@ h2
 
 //header
 header
-  position: absolute
-  left: 0
-  top: 0
   width: 100%
-  z-index: 5
-  padding: 28px 0
+  background: #fff
+  padding: 12px 0
+  .container
+    max-width: 1480px
 
 .btn-call
   margin: 0 28px 0 47px
@@ -276,25 +303,27 @@ header
   display: flex
   align-items: center
   flex-wrap: wrap
-  margin: 0 auto 0 0
+  margin: 0 auto 0 55px
 
   li
-    margin: 0 44px 0 0
+    margin: 0 40px 0 0
 
     &:last-child
       margin: 0
 
     a
-      color: #fff
+      color: #000000
+      &:hover
+        color: $accent
 
 .phone
   display: flex
   align-items: center
-  color: #fff
-  font-size: 24px
+  color: #000
+  font-size: 26px
 
   .svg-icon
-    fill: #fff
+    fill: #000
     width: 14px
     height: 22px
     margin: 0 10px 0 0
@@ -306,15 +335,16 @@ header
 //main
 .home
   padding: 145px 0
-  min-height: 1000px
+  min-height: 708px
   position: relative
   background: url("../img/banner1.jpg") no-repeat center
     size: cover
-
-  .logo
-    margin: 0 auto
-    max-width: 347px
-
+  color: #000
+  h1
+    max-width: 745px
+  .subtitle
+    max-width: 457px
+    margin: 26px 0 0
 
 //.productions
 .productions
