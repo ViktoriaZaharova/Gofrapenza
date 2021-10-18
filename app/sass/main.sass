@@ -334,8 +334,6 @@ header
 
 //main
 .home
-  padding: 145px 0
-  min-height: 708px
   position: relative
   background: url("../img/banner1.jpg") no-repeat center
     size: cover
@@ -346,11 +344,47 @@ header
     max-width: 457px
     margin: 26px 0 0
 
+.home-slider
+  padding: 145px 0
+  min-height: 708px
+
+.slick-slide
+  outline: none
+
+.slick-slider
+  width: 100%
+
+.slick-dots
+  position: absolute
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  z-index: 2
+  bottom: 33px
+  padding: 0 40px
+  li
+    cursor: pointer
+    transition: .3s ease
+    width: 6px
+    height: 6px
+    background: #fff
+    margin: 0 8px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: transparent
+    border: 1px solid #FFFFFF
+    width: 14px
+    height: 14px
+
 //.productions
 .productions
-  position: relative
-  z-index: 2
   margin: -110px 0 80px
+  .container
+    position: relative
+    z-index: 2
 
 .productions-box
   display: flex

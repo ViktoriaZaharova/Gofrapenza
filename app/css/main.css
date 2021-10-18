@@ -369,8 +369,6 @@ header {
     color: #F07F45; }
 
 .home {
-  padding: 145px 0;
-  min-height: 708px;
   position: relative;
   background: url("../img/banner1.jpg") no-repeat center;
     background-size: cover;
@@ -381,10 +379,52 @@ header {
     max-width: 457px;
     margin: 26px 0 0; }
 
-.productions {
-  position: relative;
+.home-slider {
+  padding: 145px 0;
+  min-height: 708px; }
+
+.slick-slide {
+  outline: none; }
+
+.slick-slider {
+  width: 100%; }
+
+.slick-dots {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   z-index: 2;
+  bottom: 33px;
+  padding: 0 40px; }
+  .slick-dots li {
+    cursor: pointer;
+    -webkit-transition: .3s ease;
+    transition: .3s ease;
+    width: 6px;
+    height: 6px;
+    background: #fff;
+    margin: 0 8px 0 0; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      display: none; }
+  .slick-dots .slick-active {
+    background: transparent;
+    border: 1px solid #FFFFFF;
+    width: 14px;
+    height: 14px; }
+
+.productions {
   margin: -110px 0 80px; }
+  .productions .container {
+    position: relative;
+    z-index: 2; }
 
 .productions-box {
   display: -webkit-box;
@@ -944,7 +984,10 @@ footer {
   .phone {
     font-size: 20px; }
   .logo {
-    max-width: 200px; } }
+    max-width: 200px; }
+  .slick-dots {
+    bottom: 140px;
+    padding: 0 20px; } }
 
 @media only screen and (max-width: 1300px) {
   .footer-box__head {
@@ -996,13 +1039,21 @@ footer {
   .phone {
     font-size: 18px; }
   .menu {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .slick-dots {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 0; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .home {
+  .home-slider {
     min-height: auto;
     padding: 100px 0 200px; }
+  .slick-dots {
+    bottom: 120px; }
   .orders-wrapper {
     padding: 50px 40px; }
     .orders-wrapper h2 {
