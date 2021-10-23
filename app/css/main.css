@@ -1089,7 +1089,6 @@ footer {
   border-radius: 6px;
   width: 100%;
   padding: 27px 28px 37px;
-  height: 459px;
   overflow: hidden;
   margin: 0 0 50px; }
 
@@ -1311,7 +1310,17 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    padding: 0; } }
+    padding: 0; }
+  .font-my h1 {
+    font-size: 50px; }
+  .font-my .subtitle {
+    font-size: 26px; }
+  .about-home .subtitle {
+    margin: 30px 0 20px; }
+  .breadcrumb {
+    margin: 20px 0; }
+  .about-gallery__item {
+    max-width: 280px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1357,7 +1366,40 @@ footer {
     font-size: 16px; }
     .phone .svg-icon {
       width: 10px;
-      height: 18px; } }
+      height: 18px; }
+  .box-text {
+    font-size: 14px;
+    line-height: 20px; }
+    .box-text p {
+      margin: 0 0 20px; }
+  .about-section__content-img {
+    margin: 30px 0 0; }
+  .about-section__wrapper {
+    padding: 100px 0 364px; }
+  .about-section__img {
+    margin: 0 0 30px; }
+  .about-section__content-img2 {
+    height: auto;
+    margin: 0 0 30px; }
+  .about-section__content-img4 {
+    position: relative;
+    height: auto;
+    width: 100%;
+    right: 0; }
+  .about-section {
+    padding: 0 0 40px; }
+  .complex {
+    padding: 40px 0; }
+    .complex h2 {
+      margin: 0 0 30px; }
+  .font-my h2 {
+    font-size: 30px; }
+  .complex-box__img {
+    height: 300px; }
+  .complex-box h3 {
+    font-size: 14px; }
+  .complex-box {
+    margin: 0 0 30px; } }
 
 @media only screen and (max-width: 940px) {
   header {
@@ -1392,7 +1434,25 @@ footer {
     margin: 0 0 15px;
     font-size: 16px; }
   .checkbox {
-    margin: 20px 0; } }
+    margin: 20px 0; }
+  .about-home__img {
+    margin: 0 auto 20px;
+    height: auto; }
+  .about-home {
+    padding: 0 0 50px; }
+  .about-home .box-text {
+    margin: 0 0 30px; }
+  .about-section__img-item {
+    margin: 0 0 30px; }
+  .about-section__img {
+    padding: 30px 20px 0; }
+  .font-my h2 {
+    font-size: 24px; }
+  .complex-box h3 {
+    min-height: auto;
+    max-width: none; }
+    .complex-box h3 br {
+      display: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1424,7 +1484,13 @@ footer {
   h1 {
     font-size: 30px; }
   .subtitle {
-    font-size: 20px; } }
+    font-size: 20px; }
+  .font-my h1 {
+    font-size: 30px; }
+  .font-my .subtitle {
+    font-size: 22px; }
+  .about-section__img-item, .about-section__content-img {
+    height: 300px; } }
 
 @media only screen and (max-width: 480px) {
   .btn-call {
