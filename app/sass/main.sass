@@ -70,7 +70,7 @@ body
   line-height: normal
   font-family: $default-font
   font-weight: 500
-  color: $text
+  color: #000
   background: #fff
 
 html, body
@@ -287,6 +287,17 @@ h2
 
 .ml-pc-auto
   margin-left: auto
+
+.box-text
+  line-height: 24px
+  p
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+
+strong
+  font-weight: bold
+  display: inline-block
 
 //header
 header
@@ -521,6 +532,9 @@ header
 
   h2
     margin: 0 0 47px
+
+.company-numbers-two
+  padding: 0 0 139px
 
 .company-numbers__img
   margin: 0 auto
@@ -855,6 +869,222 @@ footer
 
 .modal-dialog-scrollable .modal-content
   overflow-y: auto
+
+
+//about page
+.breadcrumb
+  padding: 0
+  background: transparent
+  border-radius: 0
+  margin: 51px 0 65px
+  color: #000000
+  font-size: 16px
+  font-family: $font
+  a
+    color: #8E8E8E
+    text-decoration: underline
+    &:hover
+      color: $accent
+
+.breadcrumb-item
+  display: flex
+  align-items: center
+
+.breadcrumb-item+.breadcrumb-item::before
+  padding: 0
+  margin: 0 9px
+  content: ''
+  width: 3.9px
+  height: 6.68px
+  background: url("../img/arrow-left.svg") no-repeat center
+    size: 100%
+
+
+.breadcrumb-item+.breadcrumb-item
+  padding: 0
+
+.font-my
+  font-family: $font
+  h1, .subtitle
+    font-family: $font
+  .subtitle
+    font-size: 36px
+    font-weight: 900
+  h1
+    font-weight: 900
+    font-size: 60px
+  h2
+    font-size: 36px
+    font-family: $font
+    font-weight: 900
+
+.about-home
+  padding: 0 0 95px
+  .subtitle
+    margin: 70px 0 45px
+  .box-text
+    margin: 0 0 54px
+
+.about-home__img
+  width: 100%
+  height: 100%
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+//about-section
+.about-section
+  padding: 0 0 80px
+
+.about-section__wrapper
+  position: relative
+  color: #fff
+  padding: 176px 0 364px
+  .box-text
+    margin: 30px 0 0
+    width: 100%
+
+.about-section__head
+  display: flex
+  align-items: center
+  h3
+    text-transform: uppercase
+    font-size: 20px
+    font-weight: 900
+    max-width: 170px
+
+.about-section__icon
+  display: flex
+  align-items: center
+  justify-content: center
+  border-radius: 50%
+  background: #fff
+  width: 93px
+  height: 93px
+  min-width: 93px
+  margin: 0 25px 0 0
+
+
+.about-section1
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(33, 33, 33, 0.7), rgba(33, 33, 33, 0.7)), url('../img/about-bg1.png') no-repeat center
+      size: cover
+
+.about-section__content
+  position: relative
+  z-index: 1
+  margin: -285px 0 0
+
+.about-section__img
+  background: #fff
+  box-shadow: 0 4px 46px rgba(0, 0, 0, 0.11)
+  border-radius: 6px
+  width: 100%
+  padding: 27px 28px 37px
+  height: 459px
+  overflow: hidden
+  margin: 0 0 50px
+
+
+.about-section__img-item
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 395px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.about-section__content-img
+  width: 100%
+  height: 363px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    height: 100%
+    width: 100%
+    object-fit: cover
+
+.about-section2
+  padding: 0 0 53px
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.54), rgba(0, 0, 0, 0.54)), url('../img/about-bg2.png') no-repeat center
+      size: cover
+
+.about-section__content-img2
+  height: 100%
+
+.about-section__content-img3
+  margin: 25px 0 0
+
+.about-section3
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.61)), url('../img/about-bg3.png') no-repeat center
+      size: cover
+
+.about-section__content-img4
+  height: 812px
+  position: absolute
+  right: 15px
+  bottom: 0
+  z-index: -1
+  width: calc(100% - 30px)
+
+
+.about-gallery
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  z-index: 1
+  margin: 100px 0 0
+  &__item
+    margin: 0 32px 35px 0
+    border: 4px solid #fff
+    max-width: 336px
+    width: 100%
+    height: 269px
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    &:last-child
+      margin: 0 0 35px
+
+//complex
+.complex
+  padding: 70px 0 64px
+  h2
+    margin: 0 0 48px
+
+.complex-box
+  margin: 0 0 56px
+  h3
+    text-transform: uppercase
+    margin: 0 0 17px
+    font-weight: 800
+    max-width: 450px
+    width: 100%
+    min-height: 60px
+  &__img
+    height: 371px
+    width: 100%
+    border-radius: 6px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
 
 
 
