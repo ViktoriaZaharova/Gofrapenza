@@ -910,6 +910,7 @@ footer
   .subtitle
     font-size: 36px
     font-weight: 900
+    line-height: 40px
   h1
     font-weight: 900
     font-size: 60px
@@ -922,8 +923,8 @@ footer
   padding: 0 0 95px
   .subtitle
     margin: 70px 0 45px
-  .box-text
-    margin: 0 0 54px
+  .btn
+    margin: 54px 0 0
 
 .about-home__img
   width: 100%
@@ -951,8 +952,8 @@ footer
   h3
     text-transform: uppercase
     font-size: 20px
+    line-height: 30px
     font-weight: 900
-    max-width: 170px
 
 .about-section__icon
   display: flex
@@ -1086,8 +1087,80 @@ footer
       height: 100%
       object-fit: cover
 
+//services page
+.services-home
+  .subtitle
+    margin: 92px 0 32px
 
+.services-home__img
+  height: auto
 
+.services-section__img-item
+  height: auto
+
+.services-section
+  .subtitle
+    margin: 0 0 27px
+  .about-section__wrapper
+    padding: 121px 0 177px
+
+.services-section1
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/services-bg1.png') no-repeat center
+      size: cover
+
+.services-section2
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/services-bg2.png') no-repeat center
+      size: cover
+
+.services-section__content
+  margin: -85px 0 0
+  .about-section__img
+    margin: 0 0 40px
+  .about-section__content-img
+    height: 100%
+  .services-section__content-img2
+    height: 395px
+    max-width: 524px
+
+  h4
+    margin: 0 0 35px
+    font-weight: bold
+    max-width: 435px
+    width: 100%
+    line-height: 24px
+
+.services-section__img-item2
+  height: 395px
+
+.list-dots
+  color: #5A5A5A
+  li
+    position: relative
+    padding: 0 0 0 27px
+    margin: 0 0 30px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 5px
+      width: 16px
+      height: 16px
+      background: $accent
+      border-radius: 50%
+
+.services-section3
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services-bg3.png') no-repeat center
+      size: cover
+
+.services-section4
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services-bg4.png') no-repeat center
+      size: cover
 
 @import "media"
 // Всегда в конце

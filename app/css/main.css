@@ -1006,7 +1006,8 @@ footer {
     font-family: "Montserrat", sans-serif; }
   .font-my .subtitle {
     font-size: 36px;
-    font-weight: 900; }
+    font-weight: 900;
+    line-height: 40px; }
   .font-my h1 {
     font-weight: 900;
     font-size: 60px; }
@@ -1019,8 +1020,8 @@ footer {
   padding: 0 0 95px; }
   .about-home .subtitle {
     margin: 70px 0 45px; }
-  .about-home .box-text {
-    margin: 0 0 54px; }
+  .about-home .btn {
+    margin: 54px 0 0; }
 
 .about-home__img {
   width: 100%;
@@ -1052,8 +1053,8 @@ footer {
   .about-section__head h3 {
     text-transform: uppercase;
     font-size: 20px;
-    font-weight: 900;
-    max-width: 170px; }
+    line-height: 30px;
+    font-weight: 900; }
 
 .about-section__icon {
   display: -webkit-box;
@@ -1217,6 +1218,78 @@ footer {
       -o-object-fit: cover;
          object-fit: cover; }
 
+.services-home .subtitle {
+  margin: 92px 0 32px; }
+
+.services-home__img {
+  height: auto; }
+
+.services-section__img-item {
+  height: auto; }
+
+.services-section .subtitle {
+  margin: 0 0 27px; }
+
+.services-section .about-section__wrapper {
+  padding: 121px 0 177px; }
+
+.services-section1 .about-section__wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/services-bg1.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/services-bg1.png") no-repeat center;
+    background-size: cover; }
+
+.services-section2 .about-section__wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.7))), url("../img/services-bg2.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/services-bg2.png") no-repeat center;
+    background-size: cover; }
+
+.services-section__content {
+  margin: -85px 0 0; }
+  .services-section__content .about-section__img {
+    margin: 0 0 40px; }
+  .services-section__content .about-section__content-img {
+    height: 100%; }
+  .services-section__content .services-section__content-img2 {
+    height: 395px;
+    max-width: 524px; }
+  .services-section__content h4 {
+    margin: 0 0 35px;
+    font-weight: bold;
+    max-width: 435px;
+    width: 100%;
+    line-height: 24px; }
+
+.services-section__img-item2 {
+  height: 395px; }
+
+.list-dots {
+  color: #5A5A5A; }
+  .list-dots li {
+    position: relative;
+    padding: 0 0 0 27px;
+    margin: 0 0 30px; }
+    .list-dots li:last-child {
+      margin: 0; }
+    .list-dots li:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 5px;
+      width: 16px;
+      height: 16px;
+      background: #F07F45;
+      border-radius: 50%; }
+
+.services-section3 .about-section__wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/services-bg3.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/services-bg3.png") no-repeat center;
+    background-size: cover; }
+
+.services-section4 .about-section__wrapper {
+  background: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url("../img/services-bg4.png") no-repeat center;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../img/services-bg4.png") no-repeat center;
+    background-size: cover; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1780px) {
@@ -1314,13 +1387,16 @@ footer {
   .font-my h1 {
     font-size: 50px; }
   .font-my .subtitle {
-    font-size: 26px; }
+    font-size: 26px;
+    line-height: normal; }
   .about-home .subtitle {
     margin: 30px 0 20px; }
   .breadcrumb {
     margin: 20px 0; }
   .about-gallery__item {
-    max-width: 280px; } }
+    max-width: 280px; }
+  .services-section .about-section__wrapper {
+    padding: 100px 0 150px; } }
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
@@ -1440,8 +1516,8 @@ footer {
     height: auto; }
   .about-home {
     padding: 0 0 50px; }
-  .about-home .box-text {
-    margin: 0 0 30px; }
+  .about-home .btn {
+    margin: 30px 0 0; }
   .about-section__img-item {
     margin: 0 0 30px; }
   .about-section__img {
@@ -1452,7 +1528,11 @@ footer {
     min-height: auto;
     max-width: none; }
     .complex-box h3 br {
-      display: none; } }
+      display: none; }
+  .services-section__content .about-section__content-img {
+    height: auto; }
+  .services-section__content .services-section__content-img2 {
+    max-width: none; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px) {
@@ -1490,7 +1570,21 @@ footer {
   .font-my .subtitle {
     font-size: 22px; }
   .about-section__img-item, .about-section__content-img {
-    height: 300px; } }
+    height: 300px; }
+  .about-section__icon {
+    width: 70px;
+    height: 70px;
+    min-width: 70px;
+    padding: 15px;
+    margin: 0 10px 0 0; }
+  .list-dots li {
+    margin: 0 0 20px; }
+  .services-section__content .services-section__content-img2 {
+    height: auto; }
+  .services-section__img-item {
+    height: auto; }
+  .services-section .subtitle {
+    margin: 0 0 20px; } }
 
 @media only screen and (max-width: 480px) {
   .btn-call {
