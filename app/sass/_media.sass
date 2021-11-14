@@ -45,6 +45,14 @@
     bottom: 140px
     padding: 0 20px
 
+  .btn-group-map
+    .btn
+      max-width: 250px
+
+
+  .btn-group-map, .maps-wrapper
+    min-width: auto
+
 @media only screen and (max-width: 1300px)
   .footer-box__head
     margin: 0
@@ -239,6 +247,36 @@
   .complex-box
     margin: 0 0 30px
 
+  .contacts-box
+    margin: 0 0 30px
+
+  .maps-wrapper
+    margin: 30px 0
+    height: 500px
+
+  .btn-group-map
+    margin: 0
+    justify-content: space-around
+
+  .contact-info
+    margin: 0 0 30px
+
+  .command-slogan
+    padding: 20px
+    h3
+      max-width: 300px
+      font-size: 16px
+      line-height: normal
+
+  .command-slogan__img
+    max-width: 370px
+
+  .btn-respond
+    max-width: 230px
+
+  .vacancies-section1
+    padding: 0
+
 @media only screen and (max-width: 940px)
   header
     padding: 15px 0
@@ -253,6 +291,17 @@
 
   .products-item
     height: 280px
+
+  .storage-section1 .storage-section__content-img
+    height: auto
+    margin: 40px 0 30px
+
+  .vacancies-section1 .list-social li a
+    width: 100px
+    height: 100px
+
+  .vacancies-section1 .list-social
+    margin: 40px 0 0
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px)
@@ -312,6 +361,136 @@
 
   .services-section__content .services-section__content-img2
     max-width: none
+
+  .history-company h1
+    margin: 0 0 30px
+
+  .events-box__date
+    width: 120px
+    height: 120px
+    font-size: 18px
+
+  .events-box
+    &__body
+      width: calc(100% - 150px)
+    &:before
+      left: 60px
+
+  .events
+    padding: 40px 0 100px
+
+  .btn-group-map .btn
+    margin: 0 0 30px
+
+  .contacts-box__item
+    margin: 0 0 20px
+
+  .contacts-box .address-item
+    margin: 30px 0 20px
+
+  .contacts-box h3
+    font-size: 18px
+
+  .delivery-section1 .about-section__img-item, .delivery-section2 .about-section__img-item
+    height: 300px
+
+  .delivery-info
+    margin: 40px 0
+
+  .delivery-info-list
+    padding: 30px 0 0
+    p
+      font-size: 18px
+    &:before
+      height: calc(100% - 12px)
+
+  .price-delivery
+    font-size: 20px
+
+  .box-text-description
+    margin: 30px 0 0
+    padding: 30px
+
+  .subtitle-decor
+    margin: 0 0 20px
+    font-size: 18px
+
+  .delivery-section__content
+    margin: 50px 0 0
+    .box-text
+      margin: 0 0 20px
+
+  .delivery-info-list li
+    margin: 0 0 20px
+
+  .command-slogan__img
+    max-width: 270px
+
+  .command-slogan
+    margin: 50px 0 30px
+
+  .btn-respond
+    max-width: none
+    position: relative
+    bottom: 0
+    right: 0
+    margin: 30px 0 0
+
+  .salary-box
+    font-size: 16px
+    line-height: normal
+    max-width: none
+    width: 100%
+    margin: 20px 0 0
+
+  .vacancy-box
+    padding: 30px
+    h3
+      max-width: none
+    h4
+      margin: 0 0 10px
+      font-size: 18px
+
+  .vacancies-warranty
+    margin: 40px 0 60px
+
+  .callback-vacancy
+    h2
+      font-size: 20px
+
+  .callback-contacts__phone, .callback-contacts__mail
+    font-size: 24px
+
+  .callback-contacts__mail
+    margin: 20px 0 0
+
+  .callback-contacts__col
+    padding: 0
+    h4
+      font-size: 18px
+
+  .callback-contacts
+    margin: 40px 0 0
+
+  .callback-vacancy
+    margin: 0 0 50px
+
+  .people-box
+    margin: 30px auto 0
+    font-size: 15px
+    &__photo
+      width: 200px
+      height: 200px
+      padding: 10px
+
+  .callback-people
+    margin: 30px 0 0
+    padding: 30px 20px
+
+  .callback-people__form
+    input
+      padding: 0 15px
+      height: 50px
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 576px)
@@ -385,6 +564,73 @@
   .services-section .subtitle
     margin: 0 0 20px
 
+  .events-box
+    padding: 0
+    margin: 0 0 40px
+    &__date
+      width: 100px
+      height: 100px
+      margin: 0 auto 20px
+    &__body
+      width: 100%
+      padding: 20px
+    &:before
+      display: none
+    .btn-toggle
+      margin: 20px auto -40px
+
+  .events
+    padding: 40px 0 60px
+    h2
+      margin: 0 0 30px
+
+  .maps-wrapper
+    height: 400px
+
+  .btn-group-map
+    flex-direction: column
+    align-items: center
+    .btn
+      margin: 0 0 20px
+
+  .box-text-description
+    margin: 30px 0 0
+    padding: 30px
+
+  .subtitle-decor span:before, .subtitle-decor span:after
+    display: none
+
+  .subtitle-decor span
+    padding: 0
+
+  .vacancies-who-box
+    padding: 30px
+    font-size: 14px
+    line-height: normal
+    &__icon
+      margin: 0 auto 30px
+
+  .command-slogan__img
+    position: relative
+    margin: 0 auto
+
+  .vacancies-warranty
+    margin: 20px 0 40px
+
+  .command-slogan
+    padding: 20px 20px 0
+    h3
+      text-align: center
+      max-width: none
+      margin: 0 auto 30px
+
+  .callback-contacts
+    flex-direction: column
+    align-items: flex-start
+
+  .callback-contacts__col
+    margin: 0 0 20px
+
 @media only screen and (max-width: 480px)
   .btn-call
     display: none
@@ -398,6 +644,10 @@
 
   .productions
     margin: -100px 0 40px
+
+  .img-decor
+    max-width: 150px
+    top: 80px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px)

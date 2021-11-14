@@ -187,9 +187,9 @@ button, .btn
     transform: skew(15deg)
 
   &:hover
-    background: $accent
+    background: $red
     color: #fff
-    border-color: $accent
+    border-color: $red
 
 .btn-white
   font-size: 14px
@@ -208,6 +208,21 @@ button, .btn
   &:hover
     background: $accent
     color: #fff
+
+.btn-orange
+  font-size: 14px
+  text-transform: uppercase
+  background: $accent
+  color: #fff
+  transform: skew(-15deg)
+  height: 51px
+  max-width: 297px
+  width: 100%
+  span
+    transform: skew(15deg)
+  &:hover
+    color: #fff
+    background: $red
 
 h1
   text-transform: uppercase
@@ -593,13 +608,13 @@ header
     left: 50%
     top: 50%
     transform: translate(-50%, -50%)
-    width: 10px
-    height: 10px
-    border-radius: 50%
+    width: 8px
+    height: 6px
 
 .inp-check:checked + .checkbox-custom
   &:before
-    background: #F07F45
+    background: url("../img/check.svg") no-repeat center
+      size: 100%
 
 .consent
   a
@@ -1161,6 +1176,692 @@ footer
   .about-section__wrapper
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('../img/services-bg4.png') no-repeat center
       size: cover
+
+//history page
+.history-company
+  h1
+    margin: 0 0 47px
+  .about-home__content
+    color: #5A5A5A
+
+//events
+.events
+  padding: 68px 0 360px
+  h2
+    margin: 0 0 70px
+
+.btn-toggle
+  border:
+    width: 1px
+    color: #000000
+  color: #000
+  max-width: 201px
+  .btn-icon
+    margin: 0 7px 0 0
+    width: 16px
+    min-width: 16px
+    height: 10px
+    display: flex
+    align-items: center
+    justify-content: center
+    fill: #000
+  &:hover
+    .btn-icon
+      fill: #fff
+
+.btn-toggle.trigger
+  background: $red
+  color: #fff
+  border-color: $red
+  .btn-icon
+    fill: #fff
+    transform: rotate(180deg) skew(15deg)
+
+.events-box
+  width: 100%
+  padding: 0 0 107px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    width: 3px
+    height: 61px
+    background: #C4C4C4
+    bottom: 23px
+    left: 83px
+  &__date
+    width: 166px
+    height: 166px
+    background: #fff
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    font-weight: bold
+    box-shadow: 0 0 28px rgba(0, 0, 0, 0.11)
+    font-size: 30px
+  &__body
+    width: calc(100% - 196px)
+    margin: 0 0 0 auto
+    background: #fff
+    padding: 21px 31px 31px 23px
+    .box-text
+      color: #5A5A5A
+      max-height: 76px
+      overflow: hidden
+    .open
+      max-height: none
+      overflow: visible
+  .btn-toggle
+    margin: 11px 0 -50px
+  &:last-child
+    padding: 0
+    &:before
+      display: none
+
+.list-decimal
+  list-style-type: decimal
+  padding: 0 0 0 20px
+
+//contacts page
+.maps-wrapper
+  width: 100%
+  height: 594px
+  min-width: 759px
+
+.contacts-box
+  margin: 0 0 100px
+  &:last-child
+    margin: 0
+  h3
+    text-transform: uppercase
+    font-weight: 900
+    margin: 0 0 20px
+    font-size: 22px
+  &__item
+    display: flex
+    align-items: flex-start
+    margin: 0 0 28px
+    &:last-child
+      margin: 0
+    a
+      font-weight: bold
+      color: #000
+  &__icon
+    width: 25px
+    min-width: 25px
+    margin: 0 13px 0 0
+  &__text
+    max-width: 337px
+    width: 100%
+    line-height: 24px
+  .address-item
+    margin: 65px 0 28px
+    .contacts-box__text
+      max-width: 258px
+      width: 100%
+
+.contact-info
+  margin: 0 0 45px
+  line-height: 24px
+  h4
+    margin: 0 0 5px
+    width: 100%
+    padding: 0 0 0 30px
+
+.contact-info__box-links
+  width: 100%
+  display: flex
+  align-items: flex-start
+  color: #000
+  font-weight: bold
+  margin: 0 0 5px
+  &:last-child
+    margin: 0
+  &:hover
+    color: $red
+
+.contact-info__box-icon
+  width: 19px
+  min-width: 19px
+  margin: 0 20px 0 0
+  display: flex
+  align-items: center
+
+.btn-group-map
+  min-width: 759px
+  justify-content: space-between
+  margin: 53px 0 0
+  width: 100%
+  .btn
+    margin: 0 0 25px
+    max-width: 322px
+
+.loc-name
+  background: #fff
+  box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.12)
+  border-radius: 13px
+  width: 330px
+  padding: 14px 15px 9px
+  text-align: left
+  color: #000000
+  font-size: 16px
+  line-height: 24px
+  right: 100%
+  position: absolute
+  margin: 0 25px 0 0
+  top: -20px
+
+.ymaps-layers-pane
+  -webkit-filter: grayscale(100%)
+
+//.storage-home
+.storage-home__img
+  height: 463px
+
+
+.storage-section1
+  padding: 0 0 250px
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(21, 21, 21, 0.67), rgba(21, 21, 21, 0.67)), url("../img/storage-bg.png") no-repeat center
+      size: cover
+  .storage-section__content-img
+    height: 681px
+    margin: 0 0 72px
+    max-width: 100%
+
+.storage-section__content-img2
+  margin: 45px 0 72px
+  position: relative
+  .img-bg
+    height: 277px
+    width: 100%
+    filter: blur(11px)
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.img-decor
+  position: absolute
+  left: 24px
+  top: 35px
+  max-width: 209px
+
+.color-orange
+  color: #F07F45
+
+.box-text-description
+  margin: 45px 0 0
+  background: #fff
+  box-shadow: 0px 4px 46px rgba(0, 0, 0, 0.11)
+  border-radius: 6px
+  padding: 44px 68px 34px 45px
+  color: #5A5A5A
+
+.subtitle-decor
+  width: 100%
+  text-transform: uppercase
+  margin: 0 auto 40px
+  position: relative
+  text-align: center
+  font-size: 20px
+  font-weight: bold
+  color: #000
+  z-index: 1
+  span
+    padding: 0 53px
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      width: 30px
+      height: 1px
+      background: #FF803F
+    &:before
+      left: 0
+    &:after
+      right: 0
+
+
+//delivery
+.delivery-home
+  h1
+    margin: 0
+
+.delivery-section1
+  padding: 0 0 150px
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(15, 15, 15, 0.74), rgba(15, 15, 15, 0.74)), url("../img/delivery-bg.png") no-repeat center
+      size: cover
+
+.delivery-info
+  margin: 110px 0 120px
+
+.delivery-info-list
+  margin: 33px 0 0 10px
+  padding: 65px 0 0 0
+  position: relative
+  color: #5A5A5A
+  p
+    font-weight: bold
+    font-size: 20px
+    color: #000
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    height: calc(100% - 18px)
+    background: #C4C4C4
+    width: 1px
+  li
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    position: relative
+    padding: 0 0 0 65px
+    margin: 0 0 23px
+    &:last-child
+      margin: 0
+    &:after
+      content: ''
+      position: absolute
+      border-radius: 50%
+      left: 37px
+      top: 50%
+      transform: translateY(-50%)
+      background: #F07F45
+      width: 11px
+      height: 11px
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      width: 30px
+      height: 1px
+      top: 50%
+      transform: translateY(-50%)
+      background: #C4C4C4
+
+.price-delivery
+  margin: 0 0 0 9px
+  font-size: 30px
+  font-weight: 800
+  color: $accent
+
+.delivery-section__content
+  margin: 179px 0 0
+  .box-text
+    color: #5A5A5A
+    margin: 0 0 40px
+  h5
+    font-weight: bold
+  .delivery-info
+    margin: 0
+  .delivery-info-list
+    padding: 35px 0 0
+    margin: 10px 0 0 10px
+    &:before
+      height: calc(100% - 9px)
+
+.delivery-section2
+  padding: 0 0 160px
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(16, 16, 16, 0.66), rgba(16, 16, 16, 0.66)), url("../img/delivery-bg2.png") no-repeat center
+      size: cover
+
+.delivery-section1, .delivery-section2
+  .about-section__img-item
+    height: 572px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+//vacancies-home
+.vacancies-home
+  h1
+    margin: 0
+  .subtitle
+    margin: 80px 0 70px
+
+
+.vacancies-who-box
+  height: 100%
+  width: 100%
+  background: #fff
+  box-shadow: 0 0 94px rgba(0, 0, 0, 0.08)
+  padding: 58px 25px 30px
+  color: #5A5A5A
+  text-align: center
+  font-size: 16px
+  line-height: 24px
+  &__icon
+    margin: 0 auto 44px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 67px
+    height: 67px
+    img
+      max-height: 100%
+
+//vacancies-warranty
+.vacancies-warranty
+  margin: 66px 0 129px
+  h2
+    font-weight: 900
+    margin: 0 0 23px
+    font-family: $font
+  .list-dots
+    li
+      margin: 0 0 10px
+      &:before
+        top: 2px
+
+.command-slogan
+  width: 100%
+  background: #fff
+  box-shadow: 0px 0px 94px rgba(0, 0, 0, 0.08)
+  padding: 28px 38px
+  position: relative
+  margin: 135px 0 80px
+  &__img
+    position: absolute
+    right: 0
+    bottom: 0
+    max-width: 470px
+  h3
+    max-width: 465px
+    font-weight: bold
+    line-height: 40px
+    font-size: 24px
+    color: $accent
+    text-transform: uppercase
+    font-family: $font
+
+.vacancy-box
+  width: 100%
+  margin: 0 0 40px
+  box-shadow: 0px 0px 94px rgba(0, 0, 0, 0.08)
+  background: #fff
+  position: relative
+  padding: 44px 47px 38px 36px
+  &:last-child
+    margin: 0
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    margin: 0 0 27px
+  h3
+    text-transform: uppercase
+    color: $accent
+    font-size: 20px
+    font-weight: bold
+    max-width: 360px
+    width: 100%
+  .box-text, .list
+    color: #5A5A5A
+    line-height: 24px
+  .box-text
+    p
+      margin: 0
+
+  h4
+    margin: 0 0 22px
+    font-size: 20px
+    font-weight: bold
+    text-transform: uppercase
+  &__sub
+    margin: 30px 0 0
+
+.btn-respond
+  position: absolute
+  right: 47px
+  z-index: 1
+  bottom: 40px
+  max-width: 297px
+
+.salary-box
+  max-width: 270px
+  width: 100%
+  line-height: 30px
+  font-size: 18px
+  strong
+    font-weight: bold
+
+.callback-vacancy
+  margin: 0 0 105px
+  h2
+    font-size: 24px
+    font-weight: bold
+    font-family: $font
+    margin: 0 auto 18px
+  .box-text
+    text-align: center
+    color: #5A5A5A
+    max-width: 485px
+    width: 100%
+    margin: 0 auto 39px
+
+.form-callback
+  margin: 0 auto
+  max-width: 558px
+  width: 100%
+  input
+    &::placeholder
+      color: #000000
+  .checkbox
+    text-align: left
+    color: #989898
+    font-size: 15px
+    margin: 0 0 20px
+    width: fit-content
+    align-items: flex-start
+  .checkbox-custom
+    width: 19px
+    min-width: 19px
+    height: 19px
+    margin: 3px 20px 0 0
+  .file
+    width: fit-content
+  button
+    margin: 40px auto 0
+
+.file
+  position: relative
+  margin: 0 0 20px
+  width: fit-content
+  display: flex
+  align-items: center
+  cursor: pointer
+
+.file-text
+  text-decoration: underline
+  color: $accent
+  max-width: 110px
+  width: 100%
+  font-size: 15px
+
+.file-icon
+  width: 24px
+  min-width: 24px
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 12px 0 0
+
+.inp-file
+  display: none
+
+
+.links-doc
+  color: $red
+  text-decoration: underline
+  display: block
+
+.form-group
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.callback-contacts
+  width: 100%
+  margin: 95px 0 0
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  &__col
+    display: flex
+    align-items: center
+    padding: 29px 0 0
+  &__icon
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    background: $accent
+    fill: #fff
+    padding: 12px
+    width: 45px
+    height: 45px
+    min-width: 45px
+    margin: 0 18px 0 0
+  h4
+    text-transform: uppercase
+    color: $accent
+    font-weight: bold
+    font-size: 20px
+    max-width: 230px
+    width: 100%
+    text-align: left
+  &__phone
+    color: #000
+    font-size: 40px
+    font-weight: bold
+    &:hover
+      color: $accent
+  &__mail
+    margin: 39px 0 0
+    color: #2B69C7
+    font-size: 30px
+    text-decoration: underline
+    text-align: left
+
+.phone-group
+  width: fit-content
+
+//vacancies-section1
+.vacancies-section1
+  padding: 0
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(31, 31, 31, 0.82), rgba(31, 31, 31, 0.82)), url("../img/vacancies-bg.png") no-repeat center
+      size: cover
+    padding: 75px 0 100px
+
+  .list-social
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+    justify-content: flex-start
+    margin: 135px 0 0
+    li
+      margin: 0 30px 40px 0
+      &:last-child
+        margin-right: 0
+      a
+        background: #fff
+        border-radius: 50%
+        width: 166px
+        height: 166px
+        &:hover
+          background: $accent
+
+//people-section1
+.people-section1
+  .about-section__wrapper
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('../img/people.png') no-repeat center
+      size: cover
+
+.people-box
+  text-align: center
+  max-width: 394px
+  width: 100%
+  margin: 88px auto 0
+  color: #5A5A5A
+  line-height: 24px
+  text-transform: uppercase
+  &__photo
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
+    background: #ffffff
+    padding: 32px
+    box-shadow: 0px 0px 94px rgba(0, 0, 0, 0.08)
+    width: 395px
+    height: 395px
+    overflow: hidden
+    margin: 0 auto 22px
+    img
+      border-radius: 50%
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+.callback-people
+  margin: 70px 0 130px
+  background: #000
+  color: #fff
+  padding: 53px 30px 59px
+  .box-text
+    text-align: center
+    max-width: 560px
+    width: 100%
+    margin: 0 auto 30px
+  &__icon
+    margin: 0 auto 14px
+    max-width: 60px
+    width: 100%
+  .checkbox
+    margin: 5px auto 23px
+    align-items: flex-start
+  button
+    margin: 0 auto
+  .checkbox-custom
+    border: none
+    width: 19px
+    height: 19px
+    min-width: 19px
+    margin: 3px 20px 0 0
+  input
+    padding: 0 29px
+    color: #000000
+    height: 66px
+    &::placeholder
+      color: #000000
+
+.people-home
+  padding: 0 0 48px
+  h1
+    font-size: 36px
+    margin: 0
+  .subtitle
+    font-size: 24px
+    margin: 23px 0 0
+
 
 @import "media"
 // Всегда в конце
