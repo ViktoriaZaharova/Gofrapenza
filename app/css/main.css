@@ -350,10 +350,20 @@ strong {
   font-weight: bold;
   display: inline-block; }
 
+.wrapper {
+  padding: 73px 0 0; }
+
+.dropdown-menu {
+  margin: 0; }
+
 header {
   width: 100%;
   background: #fff;
-  padding: 12px 0; }
+  padding: 12px 0;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 3; }
   header .container {
     max-width: 1480px; }
 
@@ -2266,7 +2276,9 @@ footer {
   .btn-respond {
     max-width: 230px; }
   .vacancies-section1 {
-    padding: 0; } }
+    padding: 0; }
+  .wrapper {
+    padding: 64px 0 0; } }
 
 @media only screen and (max-width: 940px) {
   header {
@@ -2286,7 +2298,9 @@ footer {
     width: 100px;
     height: 100px; }
   .vacancies-section1 .list-social {
-    margin: 40px 0 0; } }
+    margin: 40px 0 0; }
+  .wrapper {
+    padding: 70px 0 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 768px) {
@@ -2546,7 +2560,9 @@ footer {
     margin: -100px 0 40px; }
   .img-decor {
     max-width: 150px;
-    top: 80px; } }
+    top: 80px; }
+  .wrapper {
+    padding: 54px 0 0; } }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 420px) {

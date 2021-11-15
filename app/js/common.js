@@ -32,4 +32,8 @@ $('.btn-close').on('click', function () {
     $('.mobile-menu').fadeOut();
 });
 
+$('.dropdown').hover(function () {
+    $(this).find('.dropdown-menu').fadeToggle();
+});
+
 new WOW().init();
