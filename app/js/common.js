@@ -32,26 +32,4 @@ $('.btn-close').on('click', function () {
     $('.mobile-menu').fadeOut();
 });
 
-// btn toggle
-$('.btn-toggle').on('click', function(e){
-    e.preventDefault();
-
-    var
-        $this = $(this),
-        content = $(this).parent().find('.box-text');
-
-
-    if(!$this.hasClass('trigger')){
-        $this.addClass('trigger');
-        $this.find('.btn-text').html('Свернуть');
-
-        content.addClass('open');
-    } else {
-        $this.removeClass('trigger');
-        $this.find('.btn-text').html('Развернуть');
-
-        content.removeClass('open');
-    }
-});
-
 new WOW().init();
