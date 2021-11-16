@@ -356,6 +356,14 @@ strong {
 .dropdown-menu {
   margin: 0; }
 
+.dropdown-toggle {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: 0;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
+
 header {
   width: 100%;
   background: #fff;
