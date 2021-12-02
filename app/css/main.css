@@ -416,8 +416,6 @@ header {
 
 .home {
   position: relative;
-  background: url("../img/banner1.jpg") no-repeat center;
-    background-size: cover;
   color: #000; }
   .home h1 {
     max-width: 745px; }
@@ -425,9 +423,20 @@ header {
     max-width: 457px;
     margin: 26px 0 0; }
 
-.home-slider {
+.home-slider-item {
+  position: relative;
+  z-index: 1;
   padding: 145px 0;
   min-height: 708px; }
+  .home-slider-item__bg {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1; }
 
 .slick-slide {
   outline: none; }
@@ -2233,7 +2242,7 @@ footer {
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width: 992px) {
-  .home-slider {
+  .home-slider-item {
     min-height: auto;
     padding: 100px 0 200px; }
   .slick-dots {
